@@ -12,10 +12,11 @@ const rename = require('gulp-rename');
 
 const rulesStyles = require('./stylelintrc.json');
 
-gulp.task('default', ['styles']);
-gulp.task('dev', ['styles', 'watch']);
+gulp.task('default', ['build']);
+gulp.task('dev', ['build', 'watch']);
+gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets']);
 
-gulp.task('handelbars', function () {
+gulp.task('handelbars', () => {
     const templateData = {
         fullName: 'Дарья Пушкарская'
     };
@@ -33,7 +34,7 @@ gulp.task('handelbars', function () {
         .pipe(gulp.dest('public'));
 });
 
-gulp.task('styles', function() {
+gulp.task('styles', () => {
     const processors = [
         nested,
         assets,
@@ -45,15 +46,24 @@ gulp.task('styles', function() {
         })
     ];
 
-    return gulp.src('./src/**/*.css')
+    return gulp.src('./src/styles/**/*.css')
         .pipe(postcss(processors))
         .pipe(concat('bundle.min.css'))
-        .pipe(gulp.dest('./public/'));
+        .pipe(gulp.dest('./public/styles/'));
 });
 
-gulp.task('watch', function() {
-    gulp.watch('./css/**/*.css', function() {
-        gulp.run('styles');
-    })
+gulp.task('assets', () => {
+    gulp.src('./src/**/*.{png,jpg,ico}')
+        .pipe(gulp.dest('./public/assets/'));
+});
+
+gulp.task('fonts', () => {
+    gulp.src('./src/fonts/**/*.otf')
+        .pipe(gulp.dest('./public/fonts/'));
+});
+
+gulp.task('watch', () => {
+    gulp.watch('./src/styles/**/*.css', () => gulp.run('styles'));
+    gulp.watch('./src/**/*.hbs', () => gulp.run('handelbars'));
 });
 
