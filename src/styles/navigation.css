@@ -1,0 +1,19 @@
+.navigation {
+    text-align: right;
+    }
+
+    .navigation__link {
+        display: inline-block;
+        padding: 85px 45px 0;
+        color: #b7b7b7;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: 14px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+        transition: color .3s ease-in-out;
+        }
+    .navigation__link:hover {
+        color: #232323;
+        }
+    .navigation__link._active {
+        color: #21ea7b;
+        }
