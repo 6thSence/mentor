@@ -18,19 +18,12 @@ gulp.task('dev', ['build', 'watch']);
 gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets', 'browserSync']);
 
 gulp.task('handelbars', () => {
-    const templateData = {
-        fullName: 'Дарья Пушкарская'
-    };
-
     const options = {
-        partials : {
-            footer : '<footer>the end</footer>'
-        },
         batch : ['./src/templates']
     };
 
     return gulp.src('src/index.hbs')
-        .pipe(handlebars(templateData, options))
+        .pipe(handlebars(require('./config.json'), options))
         .pipe(rename('index.html'))
         .pipe(gulp.dest('public'));
 });
@@ -73,7 +66,7 @@ gulp.task('browserSync', () => {
 
 gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*.css', ['styles']);
-    gulp.watch('./src/**/*.hbs', ['handelbars']);
+    gulp.watch('{./src/**/*.hbs,./**/*.json}', ['handelbars']);
     gulp.watch('./src/**/*').on('change', browserSync.reload);
 });
 

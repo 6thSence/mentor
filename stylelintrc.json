@@ -67,6 +67,8 @@
 		"value-list-comma-newline-before": [2, "never-multi-line"],
 		"value-list-comma-space-after": [0, "never"],
 		"value-list-comma-space-before": [2, "never"],
-		"value-no-vendor-prefix": 2
+		"value-no-vendor-prefix": 2,
+		"number-no-trailing-zeros": 0,
+		"number-leading-zero": 0
 	}
 }

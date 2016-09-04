@@ -1,10 +1,18 @@
 .navigation {
+    z-index: 999;
+    position: fixed 0 0 * *;
+    width: 100%;
     text-align: right;
+    transition: background .3s ease-in-out;
+
+    &:hover {
+        background: rgba(255, 255, 255, .8);
+        }
     }
 
     .navigation__link {
         display: inline-block;
-        padding: 85px 45px 0;
+        padding: 75px 45px;
         color: #b7b7b7;
         text-decoration: none;
         text-transform: uppercase;
