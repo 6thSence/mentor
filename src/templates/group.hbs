@@ -1,7 +1,9 @@
 <section class="content-section group">
-    {{> title text="по каким критериям" subText="набирую группу учеников" color="_gray"}}
-
-    {{#each text.group}}
-        {{> titleDesc text=this}}
-    {{/each}}
+    <div class="group__inner">
+        {{> title text="по каким критериям" subText="набирую группу учеников" color="_gray"}}
+        <h2 class="group__side-title">Прием набора</h2>
+        {{#each text.group}}
+            {{> titleDesc text=this}}
+        {{/each}}
+    </div>
 </section>

@@ -1,7 +1,10 @@
 <section class="content-section about">
-    {{> title text="Меня зовут" subText=fullName color="_white"}}
+    <div class="about__inner">
+        {{> title text="Меня зовут" subText=fullName color="_white"}}
+        <h2 class="about__side-title">Коротко о себе</h2>
 
-    {{#each text.about}}
-        {{> titleDesc text=this}}
-    {{/each}}
+        {{#each text.about}}
+            {{> titleDesc text=this}}
+        {{/each}}
+    </div>
 </section>

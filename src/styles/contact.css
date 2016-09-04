@@ -1,1 +1,13 @@
+.contact__inner {
+    padding: 0;
+    border: solid 1px transparent;
+    }
 
+    .contact__side-title {
+        position: absolute 34% * * -186px;
+        margin: 0;
+        color: #d8d8d8;
+        text-transform: uppercase;
+        font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
+        transform: rotate(-90deg);
+        }

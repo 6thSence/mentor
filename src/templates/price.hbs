@@ -1,4 +1,7 @@
 <section class="content-section price">
-    {{> title text="Цена данного" subText="индивидуального обучения" color="_white"}}
-    {{> titleDesc text=text.price}}
+    <div class="price__inner">
+        {{> title text="Цена данного" subText="индивидуального обучения" color="_white"}}
+        <h2 class="price__side-text">Сколько стоит</h2>
+        {{> titleDesc text=text.price}}
+    </div>
 </section>
