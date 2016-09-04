@@ -18,6 +18,7 @@
   "homepage": "https://github.com/6thSence/mentor#readme",
   "dependencies": {
     "autoprefixer": "6.3.6",
+    "browser-sync": "^2.14.3",
     "gulp": "3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat": "2.6.0",

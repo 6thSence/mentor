@@ -9,12 +9,13 @@ const short = require('postcss-short');
 const stylelint = require('stylelint');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
 
 const rulesStyles = require('./stylelintrc.json');
 
 gulp.task('default', ['build']);
 gulp.task('dev', ['build', 'watch']);
-gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets']);
+gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets', 'browserSync']);
 
 gulp.task('handelbars', () => {
     const templateData = {
@@ -53,7 +54,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('assets', () => {
-    gulp.src('./src/**/*.{png,jpg,ico}')
+    gulp.src('./src/assets/**/*.{png,jpg,ico}')
         .pipe(gulp.dest('./public/assets/'));
 });
 
@@ -62,8 +63,17 @@ gulp.task('fonts', () => {
         .pipe(gulp.dest('./public/fonts/'));
 });
 
+gulp.task('browserSync', () => {
+    browserSync.init({
+        server: {
+            baseDir: "./public"
+        }
+    })
+});
+
 gulp.task('watch', () => {
-    gulp.watch('./src/styles/**/*.css', () => gulp.run('styles'));
-    gulp.watch('./src/**/*.hbs', () => gulp.run('handelbars'));
+    gulp.watch('./src/styles/**/*.css', ['styles']);
+    gulp.watch('./src/**/*.hbs', ['handelbars']);
+    gulp.watch('./src/**/*').on('change', browserSync.reload);
 });
 
