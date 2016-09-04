@@ -1,0 +1,7 @@
+<section class="content-section about">
+    {{> title text="Меня зовут" subText=fullName color="_white"}}
+
+    {{#each text.about}}
+        {{> titleDesc text=this}}
+    {{/each}}
+</section>

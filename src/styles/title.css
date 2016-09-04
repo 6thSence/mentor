@@ -1,0 +1,31 @@
+.title__wrap {
+    position: relative;
+    margin: 0 auto 90px;
+    color: #21ea7b;
+    text-align: center;
+    text-transform: uppercase;
+    font: 30px/1 'Proxima Nova Black', Helvetica, Arica, sans-serif;
+    min-width: 355px;
+
+    &:before {
+        z-index: 0;
+        position: absolute 50% * * 50%;
+        display: block;
+        border-radius: 50%;
+        content: '';
+        transform: translate(-50%, -50%);
+        size: 145px;
+        }
+    &._white:before {
+         background: #fff;
+         }
+    &._gray:before {
+         background: #f6f6f6;
+         }
+    }
+
+    .title__text {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        }

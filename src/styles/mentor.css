@@ -1,14 +1,12 @@
 @keyframes mouseDown {
     50% {
-        bottom: -35px;
+        transform: translate(-50%, 25%);
         }
     }
 
 .mentor {
     position: relative;
-    box-sizing: border-box;
     padding: 180px * 95px;
-    min-height: 960px;
     min-width: 960px;
     background: inline('../assets/mentor/signature.svg') 30px 30px/270px 120px no-repeat;
     }
@@ -49,7 +47,7 @@
         text-transform: uppercase;
         transform: rotate(-90deg);
         font: 13px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
-        color: #ffffff;
+        color: #fff;
         }
 
     .mentor__text {
@@ -64,7 +62,7 @@
             display: inline-block;
             margin: 0;
             padding: 40px 48px 40px *;
-            color: #232323 #ffffff;
+            color: #232323 #fff;
             font: 40px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
             size: 350px *;
             }
@@ -80,7 +78,7 @@
         .mentor__subtitle {
             display: inline-block;
             padding: 0 60px 45px;
-            color: #232323 #ffffff;
+            color: #232323 #fff;
             text-align: left;
             font: 24px/1 'Proxima Nova Light', Helvetica, Arila, sans-serif;
             size: 323px *;
@@ -94,11 +92,16 @@
 
         &:after {
             position: absolute * * -20px 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, 0);
             content: '';
             display: block;
             background: inline('../assets/mentor/arrow.svg') left/cover no-repeat;
             size: 15px 32px;
-            animation: mouseDown 1s infinite;
+            animation: mouseDown 1s 5;
+            transition: transform .5s ease-in-out;
+
             }
+        &:hover:after {
+             transform: translate(-50%, 25%);
+             }
         }
