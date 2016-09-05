@@ -7,6 +7,11 @@
         border: solid 1px transparent;
         }
 
+        .video {
+            margin: auto;
+            size: 560px *;
+            }
+
     .about__side-title {
         position: absolute 34% * * -196px;
         margin: 0;
