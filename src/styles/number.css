@@ -1,0 +1,34 @@
+.number {
+    position: absolute * 25px 85px *;
+    margin: 0;
+    color: #d8d8d8;
+    text-transform: uppercase;
+    font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
+    transform: rotate(-90deg);
+
+    &:after {
+        position: absolute 50% -95px * *;
+        display: block;
+        content: '';
+        transform: translateY(-50%) rotate(90deg);
+        size: 80px;
+        }
+    &._about:after {
+        background: inline('../assets/numberIcons/icon_1.svg') center/cover no-repeat;
+        }
+    &._skills:after {
+        background: inline('../assets/numberIcons/icon_2.svg') center/cover no-repeat;
+        }
+    &._plan:after {
+        background: inline('../assets/numberIcons/icon_3.svg') center/cover no-repeat;
+        }
+    &._group:after {
+        background: inline('../assets/numberIcons/icon_4.svg') center/cover no-repeat;
+        }
+    &._price:after {
+        background: inline('../assets/numberIcons/icon_5.svg') center/cover no-repeat;
+        }
+    &._contact:after {
+        background: inline('../assets/numberIcons/icon_6.svg') center/cover no-repeat;
+        }
+    }
