@@ -15,3 +15,47 @@
             font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
             transform: rotate(-90deg);
             }
+
+        .plan__description {
+            margin: 0 0 60px;
+            }
+
+        .plan__options {
+            margin: auto;
+            size: 1148px *;
+            }
+
+            .plan__option {
+                display: inline-block;
+                vertical-align: top;
+                size: 50%;
+                }
+
+                .plan__option-title {
+                    font: 24px/1 'Proxima Nova Light', Helvetia, Arial, sans-serif;
+                    color: #21ea7b;
+                    }
+
+                .plan__option-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    }
+
+                    .plan__option-item {
+                        position: relative;
+                        margin: 0;
+                        padding: 0 0 0 35px;
+                        box-sizing: border-box;
+                        font: 16px/24px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+                        color: #232323;
+
+                        &:before {
+                            position: absolute 9px * * 20px;
+                            display: block;
+                            border-radius: 50%;
+                            background: #21ea7b;
+                            content: '';
+                            size: 7px;
+                            }
+                        }
