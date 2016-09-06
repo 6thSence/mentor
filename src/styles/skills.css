@@ -11,3 +11,35 @@
         font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
         transform: rotate(-90deg);
         }
+
+    .skills__description {
+        margin: 0 0 180px;
+        }
+
+    .skills__list {
+        position: relative;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 40px 0 0 40px;
+        border: solid 2px #21ea7b;
+        size: 1148px *;
+
+        &:before {
+            position: absolute * * * 50%;
+            display: block;
+            background: #fff inline('../assets/owls/owl_2.png') center/120px no-repeat;
+            content: '';
+            transform: translate(-50%, -100%);
+            size: 150px;
+            }
+        }
+
+        .skills__item {
+            margin: 0 28px 50px 0;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:last-child {
+                margin: 0 0 50px;
+                }
+            }
