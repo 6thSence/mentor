@@ -1,5 +1,9 @@
 .about {
     background: #f6f6f6;
+
+    & .description:last-child {
+        margin: 0 auto 60px;
+        }
     }
 
     .about__inner {
@@ -8,8 +12,17 @@
         }
 
         .video {
+            position: relative;
             margin: auto;
-            size: 560px *;
+            size: 755px 450px;
+
+            &:before {
+                position: absolute * * 0 -138px;
+                display: block;
+                background: inline('../assets/owls/owl_1.png') center/cover no-repeat;
+                content: '';
+                size: 120px;
+                }
             }
 
     .about__side-title {
