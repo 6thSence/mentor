@@ -8,7 +8,6 @@
 		"block-closing-brace-space-before": [2, "always-single-line"],
 		"block-no-empty": 0,
 		"block-opening-brace-newline-after": [2, "always"],
-		"block-opening-brace-newline-before": [2, "never-single-line"],
 		"block-opening-brace-space-after": [2, "always-single-line"],
 		"block-opening-brace-space-before": [2, "always"],
 		"color-no-invalid-hex": 2,

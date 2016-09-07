@@ -1,0 +1,49 @@
+.footer {
+    margin: 0;
+    background: #262626;
+    size: * 105px;
+    }
+
+    .footer__inner {
+        position: relative;
+        margin: auto;
+        max-width: 1148px;
+        border: 0;
+        color: #fff;
+        font: 16px/105px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+        }
+
+        .footer__copyright {
+            display: inline-block;
+            margin: 0;
+            }
+
+        .footer__share {
+            position: absolute 0 0 0 *;
+            display: inline-block;
+            }
+
+            .footer__share-text {
+                margin: 0 10px 0 0;
+                }
+
+            .footer__share-list {
+                display: inline-block;
+                }
+
+                .footer__share-item {
+                    display: inline-block;
+                    padding: 0 5px;
+                    background: inline('../assets/icons/icon_VK_share.svg') center/contain no-repeat;
+                    vertical-align: middle;
+                    opacity: .8;
+                    transition: opacity .3s ease-in-out;
+                    size: 30px;
+
+                    &._fb {
+                        background: inline('../assets/icons/icon_Facebook_share.svg') center/contain no-repeat;
+                        }
+                    &:hover {
+                        opacity: 1;
+                        }
+                    }
