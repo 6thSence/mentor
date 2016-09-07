@@ -10,12 +10,13 @@ const stylelint = require('stylelint');
 const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
+const babel = require('gulp-babel');
 
 const rulesStyles = require('./stylelintrc.json');
 
 gulp.task('default', ['build']);
-gulp.task('dev', ['build', 'watch']);
-gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets', 'browserSync']);
+gulp.task('dev', ['build', 'browserSync', 'watch']);
+gulp.task('build', ['styles', 'handelbars', 'fonts', 'assets', 'scripts']);
 
 gulp.task('handelbars', () => {
     const options = {
@@ -56,6 +57,14 @@ gulp.task('fonts', () => {
         .pipe(gulp.dest('./public/fonts/'));
 });
 
+gulp.task('scripts', () => {
+    gulp.src('./src/scripts/**/*.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('./public/scripts/'));
+});
+
 gulp.task('browserSync', () => {
     browserSync.init({
         server: {
@@ -66,6 +75,7 @@ gulp.task('browserSync', () => {
 
 gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*.css', ['styles']);
+    gulp.watch('./src/scripts/**/*.js', ['scripts']);
     gulp.watch('{./src/**/*.hbs,./**/*.json}', ['handelbars']);
     gulp.watch('./public/**/*').on('change', browserSync.reload);
 });

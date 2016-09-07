@@ -3,7 +3,8 @@
     position: absolute 0 0 * 0;
     min-width: 1148px;
     text-align: right;
-    transition: background .3s ease-in-out;
+    transition: background .5s ease-in-out,
+        transform .3s ease-in-out;
     }
 
     .header__logo {
@@ -38,6 +39,10 @@
 .header._move {
     position: fixed 0 0 * 0;
     background: #262626;
+
+        &._hiden {
+            transform: translateY(-95%);
+            };
 
         & .header__logo {
             transform: scale(.5) translate(-50%, -70%);
