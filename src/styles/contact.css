@@ -11,3 +11,77 @@
         font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
         transform: rotate(-90deg);
         }
+
+    .contact__description {
+        margin: 0 auto 50px;
+        size: 550px *;
+        }
+
+    .contact__social-list {
+        margin: 0 0 50px;
+        text-align: center;
+        }
+
+    .contact__social-item {
+        display: inline-block;
+        padding: 0 15px;
+        background: inline('../assets/icons/icon_VK.svg') center/contain no-repeat;
+        opacity: .4;
+        transition: opacity .8s ease-in-out;
+        size: 45px;
+
+        &:hover {
+            opacity: 1;
+            }
+
+        &._gh {
+            background: inline('../assets/icons/icon_GitHub.svg') center/contain no-repeat;
+            }
+        }
+
+    .contact__skype {
+        margin: 0 0 85px;
+        color: #232323;
+        text-align: center;
+        font: 18px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+        }
+
+    .contact__skype-link {
+        color: #21ea7b;
+        }
+
+    .contact-form {
+        margin: auto;
+        size: 560px *;
+        text-align: center;
+        }
+
+    .contact-form__input {
+        margin: 0 0 25px;
+        padding: 18px;
+        box-sizing: border-box;
+        font: 18px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+        border: 0;
+        outline: 0;
+        color: #232323 #f6f6f6;
+        size: 100% *;
+
+        &:hover, &:focus {
+            border: 0;
+            outline: 0;
+            }
+        &:last-child {
+            margin: 0 0 35px;
+            }
+        }
+
+    .contact-form__button {
+        padding: 0 45px;
+        display: inline-block;
+        color: #fff #21ea7b;
+        font: 16px/60px 'Proxima Nova Black', Helvetica, Arial, sens-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 35px;
+        cursor: pointer;
+        }

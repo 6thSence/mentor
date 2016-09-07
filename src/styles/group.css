@@ -11,3 +11,13 @@
         font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
         transform: rotate(-90deg);
         }
+
+    .group__description .description:last-child {
+        margin: 0 auto 120px;
+        }
+
+    .group__img {
+        display: block;
+        margin: auto;
+        size: 825px 260px;
+        }

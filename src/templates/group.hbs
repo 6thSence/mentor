@@ -2,9 +2,14 @@
     <div class="group__inner">
         {{> title text="по каким критериям" subText="набирую группу учеников" color="_gray"}}
         <h2 class="group__side-title">Прием набора</h2>
-        {{#each text.group}}
-            {{> titleDesc text=this}}
-        {{/each}}
+
+        <div class="group__description">
+            {{#each text.group}}
+                {{> titleDesc text=this}}
+            {{/each}}
+        </div>
+
+        <img src="../assets/owls/three_owls.png" alt="" class="group__img">
 
         {{>number number="04" class="_group"}}
     </div>

@@ -2,8 +2,30 @@
     <div class="contact__inner">
         {{> title text="Как со мной" subText="связаться" color="_gray"}}
         <h2 class="contact__side-title">Как связаться</h2>
-        {{> titleDesc text=text.contact}}
 
+        <div class="contact__description">
+            {{> titleDesc text=text.contact}}
+        </div>
+
+        <div class="contact__social-list">
+            <a href="https://vk.com/d_pushkarskaya" class="contact__social-item _vk"></a>
+            <a href="https://github.com/6thSence" class="contact__social-item _gh"></a>
+        </div>
+
+        <p class="contact__skype">
+            или по Skype:
+            <a href="skype:dashaoralenaoo" class="contact__skype-link">
+                dashaoralenaoO
+            </a>
+        </p>
+
+        <form action="" class="contact-form">
+            <div class="contact-form__inputs">
+                <input type="text" class="contact-form__input" placeholder="Как вас зовут?">
+                <input type="text" class="contact-form__input" placeholder="email">
+            </div>
+            <a class="contact-form__button">Отправить</a>
+        </form>
         {{>number number="06" class="_contact"}}
     </div>
 </section>

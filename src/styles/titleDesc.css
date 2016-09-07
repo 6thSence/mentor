@@ -1,7 +1,7 @@
 .description {
     margin: 0 auto 15px;
-    font: 18px/30px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+    max-width: 952px;
     color: #232323;
-    size: 952px *;
     text-align: center;
+    font: 18px/30px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
     }

@@ -39,8 +39,7 @@
 		"media-query-list-comma-space-after": [2, "always"],
 		"media-query-list-comma-space-before": [2, "never"],
 		"media-query-parentheses-space-inside": [2, "never"],
-		"no-eol-whitespace": 2,
-		"no-missing-eof-newline": 2,
+		"no-missing-eof-newline": 0,
 		"no-multiple-empty-lines": 2,
 		"number-leading-zero": [2, "never"],
 		"number-no-trailing-zeros": 2,
@@ -69,6 +68,7 @@
 		"value-list-comma-space-before": [2, "never"],
 		"value-no-vendor-prefix": 2,
 		"number-no-trailing-zeros": 0,
-		"number-leading-zero": 0
+		"number-leading-zero": 0,
+		"no-eol-whitespace": 0
 	}
 }
