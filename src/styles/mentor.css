@@ -10,7 +10,6 @@
     box-sizing: border-box;
     padding: 180px * 95px;
     min-width: 960px;
-    background: inline('../assets/mentor/signature.svg') 30px 30px/270px 120px no-repeat;
     }
 
         .mentor__inner {

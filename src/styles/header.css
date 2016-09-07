@@ -1,0 +1,55 @@
+.header {
+    z-index: 999;
+    position: absolute 0 0 * 0;
+    min-width: 1148px;
+    text-align: right;
+    transition: background .3s ease-in-out;
+    }
+
+    .header__logo {
+        position: absolute 30px * * 30px;
+        background: inline('../assets/mentor/signature.svg') center/contain no-repeat;
+        size: 270px 120px;
+        transition: transform .1s ease-in-out;
+        }
+
+    .header__nav {
+        width: 80%;
+        display: inline-block;
+        }
+
+        .header__nav-link {
+            display: inline-block;
+            padding: 75px 3%;
+            color: #b7b7b7;
+            text-decoration: none;
+            text-transform: uppercase;
+            font: 14px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: #232323;
+                }
+            &._active {
+                color: #21ea7b;
+                }
+            }
+
+.header._move {
+    position: fixed 0 0 * 0;
+    background: #262626;
+
+        & .header__logo {
+            transform: scale(.5) translate(-50%, -70%);
+            }
+
+        & .header__nav-link {
+            padding: 45px * 40px;
+            color: #8d8d8d;
+
+            &:hover {
+                color: #fff;
+                }
+            }
+    }
+
