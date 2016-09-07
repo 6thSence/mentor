@@ -67,6 +67,6 @@ gulp.task('browserSync', () => {
 gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*.css', ['styles']);
     gulp.watch('{./src/**/*.hbs,./**/*.json}', ['handelbars']);
-    gulp.watch('./src/**/*').on('change', browserSync.reload);
+    gulp.watch('./public/**/*').on('change', browserSync.reload);
 });
 

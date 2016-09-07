@@ -35,10 +35,14 @@
         }
 
         .skills__item {
-            margin: 0 28px 50px 0;
             display: inline-block;
+            margin: 0 28px 50px 0;
             vertical-align: middle;
+            transition: transform .3s ease-in-out;
 
+            &:hover {
+                transform: translateY(-10px);
+                }
             &:last-child {
                 margin: 0 0 50px;
                 }
