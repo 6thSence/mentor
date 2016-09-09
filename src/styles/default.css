@@ -28,3 +28,9 @@ body, html {
         position: absolute * 60px 0 *;
         }
     }
+
+div, h1, h2, h3, p, span {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: grayscale;
+    }

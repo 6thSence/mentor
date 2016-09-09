@@ -21,8 +21,10 @@
         box-sizing: border-box;
         margin: auto;
         padding: 40px 0 0 40px;
+        max-width: 1148px;
+        width: 80%;
         border: solid 2px #21ea7b;
-        size: 1148px *;
+        text-align: center;
 
         &:before {
             position: absolute * * * 50%;

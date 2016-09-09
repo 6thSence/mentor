@@ -15,13 +15,13 @@
         }
 
     .header__nav {
-        width: 80%;
+        width: 85%;
         display: inline-block;
         }
 
         .header__nav-link {
             display: inline-block;
-            padding: 75px 3%;
+            padding: 75px 2%;
             color: #b7b7b7;
             text-decoration: none;
             text-transform: uppercase;
@@ -41,7 +41,7 @@
     background: #262626;
 
         &._hiden {
-            transform: translateY(-95%);
+            transform: translateY(-100%);
             };
 
         & .header__logo {
@@ -54,6 +54,9 @@
 
             &:hover {
                 color: #fff;
+                }
+            &._active {
+                color: #21ea7b;
                 }
             }
     }

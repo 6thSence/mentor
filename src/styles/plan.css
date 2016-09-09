@@ -22,18 +22,19 @@
 
         .plan__options {
             margin: auto;
-            size: 1148px *;
+            max-width: 1148px;
+            width: 80%;
             }
 
             .plan__option {
                 display: inline-block;
                 vertical-align: top;
-                size: 50%;
+                size: 50% *;
                 }
 
                 .plan__option-title {
-                    font: 24px/1 'Proxima Nova Light', Helvetia, Arial, sans-serif;
                     color: #21ea7b;
+                    font: 24px/1 'Proxima Nova Light', Helvetia, Arial, sans-serif;
                     }
 
                 .plan__option-list {
@@ -44,11 +45,11 @@
 
                     .plan__option-item {
                         position: relative;
+                        box-sizing: border-box;
                         margin: 0;
                         padding: 0 0 0 35px;
-                        box-sizing: border-box;
-                        font: 16px/24px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
                         color: #232323;
+                        font: 16px/24px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
 
                         &:before {
                             position: absolute 9px * * 20px;
