@@ -1,4 +1,4 @@
-§@keyframes mouseDown {
+@keyframes mouseDown {
     50% {
         transform: translate(-50%, 25%);
         }
