@@ -125,6 +125,10 @@
         size: 90% *;
         }
 
+        .contact-form__input {
+            border-radius: 0;
+            }
+
         .contact-form__button {
             margin: * * 65px;
             }
