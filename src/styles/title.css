@@ -29,3 +29,22 @@
         z-index: 1;
         margin: 0;
         }
+
+@media screen and (max-device-width: 320px) {
+    .title__wrap {
+        box-sizing: border-box;
+        margin: 0 auto 30px;
+        padding: 0 15px;
+        min-width: 320px;
+        text-align: left;
+        font-size: 22px;
+        size: 100% *;
+
+        &:before {
+            left: 25px;
+            margin-bottom: 35px;
+            transform: translate(0, -50%);
+            size: 90px;
+            }
+        }
+    }

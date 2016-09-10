@@ -38,4 +38,22 @@
     .price__side-title {
         display: none;
         }
+
+    .price__text {
+        margin: * * 15px;
+        padding: 0 15px;
+        text-align: left;
+        font-size: 24px;
+        line-height: 26px;
+        size: 100% *;
+        }
+
+    .price__description {
+        margin: * * 30px;
+        }
+
+    .price__img {
+        margin: * * 40px;
+        size: 150px *;
+        }
     }

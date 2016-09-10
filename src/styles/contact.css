@@ -26,12 +26,11 @@
         display: inline-block;
         padding: 0 15px;
         background: inline('../assets/icons/icon_VK.svg') center/contain no-repeat;
-        opacity: .4;
         transition: opacity .8s ease-in-out;
         size: 45px;
 
         &:hover {
-            opacity: 1;
+            opacity: .8;
             }
 
         &._gh {
@@ -95,4 +94,33 @@
     .contact__side-title {
         display: none;
         }
+
+    .contact__description {
+        margin: * * 30px;
+        size: 320px *;
+        }
+
+    .contact__social-list {
+        margin: * * 30px;
+        text-align: left;
+        }
+
+        .contact__social-item {
+            size: 40px;
+            }
+
+    .contact__skype {
+        padding: * 15px *;
+        margin: * * 50px;
+        text-align: left;
+        font-size: 16px;
+        }
+
+    .contact-form {
+        size: 90% *;
+        }
+
+        .contact-form__button {
+            margin: * * 65px;
+            }
     }

@@ -54,4 +54,22 @@
     .skills__side-title {
         display: none;
         }
+
+    .skills__description {
+        margin: * * 155px;
+        }
+
+    .skills__list {
+        margin: * * 70px;
+        size: 90% *;
+        padding: * * * 5px;
+
+        &:before {
+            transform: translate(-50%, -110%);
+            }
+        }
+
+        .skills__item {
+            margin: * 15px 20px *;
+            }
     }

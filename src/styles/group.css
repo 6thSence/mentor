@@ -12,18 +12,27 @@
         transform: rotate(-90deg);
         }
 
-    .group__description .description:last-child {
+    .group__description {
         margin: 0 auto 120px;
         }
 
     .group__img {
         display: block;
         margin: auto;
-        size: 825px 260px;
+        size: 825px *;
         }
 
 @media screen and (max-device-width: 320px) {
     .group__side-title {
         display: none;
+        }
+
+    .group__description {
+        margin: * * 30px;
+        }
+
+    .group__img {
+        margin: * * 30px;
+        size: 90% *;
         }
     }

@@ -65,4 +65,27 @@
     .plan__side-title {
         display: none;
         }
+
+    .plan__description {
+        margin: * * 45px;
+        }
+
+    .plan__options {
+        margin: * * 50px;
+        size: 90% *;
+        }
+
+        .plan__option {
+            box-sizing: border-box;
+            margin: * * 5px;
+            size: 100% *;
+            }
+
+            .plan__option-item {
+                padding: * * * 20px;
+
+                &:before {
+                left: 0;
+                }
+            }
     }

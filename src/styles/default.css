@@ -36,6 +36,9 @@ body, html {
         }
 
         .content-section {
+            padding: 45px 0 0;
+            min-height: 600px;
+
             &:before, &:after {
                 display: none;
                 }

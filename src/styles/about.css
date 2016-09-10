@@ -23,6 +23,10 @@
                 content: '';
                 size: 120px;
                 }
+
+            & iframe {
+                size: 100%;
+                }
             }
 
     .about__side-title {
@@ -35,11 +39,22 @@
         }
 
 @media screen and (max-device-width: 320px) {
-    .about__side-title {
-        display: none;
+    .about {
+
+        & .description:last-child {
+            margin-bottom: 65px;
+            }
         }
 
-        .about__video iframe {
-            size: 320px *;
+        .about__side-title {
+            display: none;
             }
+
+            .about__video {
+                size: 320px 190px;
+
+                &:before {
+                    display: none;
+                    }
+                }
     }

@@ -47,3 +47,20 @@
                         opacity: 1;
                         }
                     }
+
+@media screen and (max-device-width: 320px) {
+    .footer {
+        box-sizing: border-box;
+        padding: 25px 15px;
+        }
+
+        .footer__copyright, .footer__share {
+            position: static;
+            display: block;
+            box-sizing: border-box;
+            margin: * * 10px;
+            text-align: left;
+            font: 14px/18px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+            size: 100% *;
+            }
+    }
