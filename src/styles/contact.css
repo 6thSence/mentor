@@ -60,17 +60,22 @@
         padding: 18px;
         box-sizing: border-box;
         font: 18px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
-        border: 0;
+        border: solid 2px transparent;
         outline: 0;
         color: #232323 #f6f6f6;
-        size: 100% *;
+        size: 100% 58px;
+        transition: background .3s, border .3s;
 
         &:hover, &:focus {
-            border: 0;
+            background: #fff;
+            border-color: #21ea7b;
             outline: 0;
             }
         &:last-child {
             margin: 0 0 35px;
+            }
+        &._error {
+            border-color: #f40d39;
             }
         }
 
