@@ -90,3 +90,9 @@
             opacity: .6;
             }
         }
+
+@media screen and (max-device-width: 320px) {
+    .contact__side-title {
+        display: none;
+        }
+    }

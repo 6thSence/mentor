@@ -21,3 +21,9 @@
         margin: auto;
         size: 825px 260px;
         }
+
+@media screen and (max-device-width: 320px) {
+    .group__side-title {
+        display: none;
+        }
+    }

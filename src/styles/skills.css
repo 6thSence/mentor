@@ -3,7 +3,7 @@
     border: solid 1px transparent;
     }
 
-    .skills__side-tittle {
+    .skills__side-title {
         position: absolute 34% * * -205px;
         margin: 0;
         color: #d8d8d8;
@@ -49,3 +49,9 @@
                 margin: 0 0 50px;
                 }
             }
+
+@media screen and (max-device-width: 320px) {
+    .skills__side-title {
+        display: none;
+        }
+    }

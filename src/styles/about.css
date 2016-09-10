@@ -35,7 +35,11 @@
         }
 
 @media screen and (max-device-width: 320px) {
-    .about__video iframe {
-        size: 320px *;
+    .about__side-title {
+        display: none;
         }
+
+        .about__video iframe {
+            size: 320px *;
+            }
     }

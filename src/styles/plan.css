@@ -60,3 +60,9 @@
                             size: 7px;
                             }
                         }
+
+@media screen and (max-device-width: 320px) {
+    .plan__side-title {
+        display: none;
+        }
+    }

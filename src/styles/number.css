@@ -31,3 +31,9 @@
         background: inline('../assets/numberIcons/icon_6.svg') center/cover no-repeat;
         }
     }
+
+@media screen and (max-device-width: 320px) {
+    .number {
+        display: none;
+        }
+    }
