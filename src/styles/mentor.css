@@ -1,4 +1,4 @@
-@keyframes mouseDown {
+§@keyframes mouseDown {
     50% {
         transform: translate(-50%, 25%);
         }
@@ -22,7 +22,7 @@
                 display: block;
                 border: solid 2px #21ea7b;
                 content: '';
-                size: * 135px;
+                min-height: 135px;
                 }
             &:before {
                 z-index: 0;
@@ -54,7 +54,7 @@
 
         .mentor__text {
             z-index: 3;
-            position: absolute 45px -187px * *;
+            position: absolute * -187px 0 *;
             box-sizing: border-box;
             text-align: right;
             size: 590px *;
@@ -104,3 +104,60 @@
                 transition: transform .5s ease-in-out;
                 }
             }
+
+@media screen and (max-device-width: 320px) {
+    .mentor__subtitle,
+    .mentor__desc,
+    .mentor__inner:after,
+    .mentor__mouse-down {
+        display: none;
+        }
+
+    .mentor {
+        padding: 15px;
+        box-sizing: border-box;
+        min-height: 457px;
+        min-width: 320px;
+        size: 320px 457px;
+        background: inline('../assets/mentor/photo.jpg') center/cover no-repeat;
+        }
+
+        .mentor__inner {
+            box-sizing: border-box;
+            size: 100%;
+            transform: none;
+            }
+
+            .mentor__inner:before {
+                position: absolute 0;
+                border: solid 2px #21ea7b;
+                z-index: 1;
+                }
+
+            .mentor__photo {
+                display: none;
+                }
+            
+            .mentor__text {
+                text-align: left;
+                position: absolute * 0 *;
+                box-sizing: border-box;
+                padding: 15px;
+                size: 100% *;
+                }
+
+                .mentor__name {
+                    padding: 0;
+                    margin: 0 0 10px;
+                    font-size: 24px;
+                    color: #fff transparent;
+                    size: 100% *;
+                    }
+
+                .mentor__title {
+                    margin: 0;
+                    font-size: 34px;
+                    line-height: 36px;
+                    size: 100% *;
+                    }
+    }

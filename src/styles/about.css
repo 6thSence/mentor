@@ -11,7 +11,7 @@
         border: solid 1px transparent;
         }
 
-        .video {
+        .about__video {
             position: relative;
             margin: auto;
             size: 755px 450px;
@@ -33,3 +33,9 @@
         font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
         transform: rotate(-90deg);
         }
+
+@media screen and (max-device-width: 320px) {
+    .about__video iframe {
+        size: 320px *;
+        }
+    }

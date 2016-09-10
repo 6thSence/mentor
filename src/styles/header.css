@@ -61,3 +61,8 @@
             }
     }
 
+@media screen and (max-device-width: 320px) {
+    .header__logo, .header__nav {
+        display: none;
+        }
+    }
