@@ -62,6 +62,7 @@ gulp.task('scripts', () => {
         .pipe(babel({
             presets: ['es2015']
         }))
+        .pipe(concat('bundel.min.js'))
         .pipe(gulp.dest('./public/scripts/'));
 });
 

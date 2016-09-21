@@ -4,6 +4,8 @@
 
 ```
 gulp
+
+node server.js
 ```
 
 or

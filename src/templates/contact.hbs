@@ -23,12 +23,12 @@
             {{> titleDesc text=text.contactBack}}
         </div>
 
-        <form action="" class="contact-form">
+        <form action="/sendMail" class="contact-form" id="form">
             <div class="contact-form__inputs">
-                <input type="text" class="contact-form__input _error" placeholder="Как вас зовут?" tabindex="1">
-                <input type="text" class="contact-form__input" placeholder="Email" tabindex="2">
+                <input type="text" class="contact-form__input _error" placeholder="Как вас зовут?" tabindex="1" name="name">
+                <input type="text" class="contact-form__input" placeholder="Email" tabindex="2" name="email">
             </div>
-            <a class="contact-form__button" tabindex="3">Отправить</a>
+            <a class="contact-form__button" id="submite-button" tabindex="3">Отправить</a>
         </form>
         {{>number number="06" class="_contact"}}
     </div>
