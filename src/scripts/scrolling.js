@@ -23,7 +23,9 @@ const scrolling = () => {
 
         setTimeout(() => {
             document.body.scrollTop = document.body.scrollTop + perTick;
+
             if (document.body.scrollTop === to) return;
+
             _scrollToElement(to, duration - 10);
         }, 10);
     };
