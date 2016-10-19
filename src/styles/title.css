@@ -1,3 +1,17 @@
+@keyframes bounce {
+    0% {
+        size: 5px;
+    }
+    40% {
+        size: 160px;
+    }
+    80% {
+        size: 130px;
+    }
+    100% {
+        size: 145px;
+    }
+}
 .title__wrap {
     position: relative;
     margin: 0 auto 90px;
@@ -7,14 +21,14 @@
     font: 30px/1 'Proxima Nova Black', Helvetica, Arica, sans-serif;
     min-width: 355px;
 
-    &:before {
+    &._viewport:before {
         z-index: 0;
         position: absolute 50% * * 50%;
         display: block;
         border-radius: 50%;
         content: '';
         transform: translate(-50%, -50%);
-        size: 145px;
+        animation: bounce 1s ease-in-out forwards;
         }
     &._white:before {
          background: #fff;
