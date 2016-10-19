@@ -1,3 +1,16 @@
+@keyframes slide {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes mouseDown {
     50% {
         transform: translate(-50%, 25%);
@@ -23,6 +36,9 @@
                 border: solid 2px #21ea7b;
                 content: '';
                 min-height: 135px;
+                opacity: 0;
+                transform: translateX(1300px);
+                animation: slide 3s ease-in-out forwards;
                 }
             &:before {
                 z-index: 0;
@@ -39,8 +55,11 @@
         .mentor__photo {
             position: absolute 45px * * -70px;
             z-index: 1;
-            background: inline('../assets/mentor/photo.jpg') center/cover no-repeat;
+            background: url('../assets/mentor/photo.jpg') center/cover no-repeat;
             size: 687px 456px;
+            opacity: 0;
+            transform: translateX(-600px);
+            animation: slide 3s ease-in-out forwards;
             }
 
         .mentor__desc {
@@ -50,6 +69,8 @@
             transform: rotate(-90deg);
             font: 13px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
             color: #fff;
+            opacity: 0;
+            animation: show 1s ease-in-out 6s forwards;
             }
 
         .mentor__text {
@@ -67,6 +88,8 @@
                 color: #232323 #fff;
                 font: 40px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
                 size: 350px *;
+                opacity: 0;
+                animation: show 2s ease-in-out 4s forwards;
                 }
 
             .mentor__title {
@@ -75,6 +98,8 @@
                 color: #21ea7b;
                 text-transform: uppercase;
                 font: 80px/90px 'Proxima Nova Black', Helvetica, Arial, sans-serif;
+                opacity: 0;
+                animation: show 2s ease-in-out 3s forwards;
                 }
 
             .mentor__subtitle {
@@ -85,6 +110,8 @@
                 font: 24px/1 'Proxima Nova Light', Helvetica, Arila, sans-serif;
                 box-sizing: border-box;
                 size: 350px *;
+                opacity: 0;
+                animation: show 2s ease-in-out 5s forwards;
                 }
 
         .mentor__mouse-down {
