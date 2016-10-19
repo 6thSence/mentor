@@ -38,7 +38,7 @@
                 min-height: 135px;
                 opacity: 0;
                 transform: translateX(1300px);
-                animation: slide 3s ease-in-out forwards;
+                animation: slide 2s ease-in-out forwards;
                 }
             &:before {
                 z-index: 0;
@@ -59,7 +59,7 @@
             size: 687px 456px;
             opacity: 0;
             transform: translateX(-600px);
-            animation: slide 3s ease-in-out forwards;
+            animation: slide 2s ease-in-out forwards;
             }
 
         .mentor__desc {
@@ -70,7 +70,7 @@
             font: 13px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
             color: #fff;
             opacity: 0;
-            animation: show 1s ease-in-out 6s forwards;
+            animation: show 1s ease-in-out 3s forwards;
             }
 
         .mentor__text {
@@ -89,7 +89,7 @@
                 font: 40px/1 'Proxima Nova Light', Helvetica, Arial, sans-serif;
                 size: 350px *;
                 opacity: 0;
-                animation: show 2s ease-in-out 4s forwards;
+                animation: show 1s ease-in-out 2s forwards;
                 }
 
             .mentor__title {
@@ -99,7 +99,7 @@
                 text-transform: uppercase;
                 font: 80px/90px 'Proxima Nova Black', Helvetica, Arial, sans-serif;
                 opacity: 0;
-                animation: show 2s ease-in-out 3s forwards;
+                animation: show 2s ease-in-out 2s forwards;
                 }
 
             .mentor__subtitle {
@@ -111,7 +111,7 @@
                 box-sizing: border-box;
                 size: 350px *;
                 opacity: 0;
-                animation: show 2s ease-in-out 5s forwards;
+                animation: show 1s ease-in-out 3s forwards;
                 }
 
         .mentor__mouse-down {

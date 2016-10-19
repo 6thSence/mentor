@@ -6,7 +6,6 @@ const scrolling = () => {
         links.forEach(link => link.addEventListener('click', _onClickLink));
     };
 
-
     const _onClickLink = (event) => {
         event.preventDefault();
         const id = event.target.dataset.view;
@@ -23,9 +22,7 @@ const scrolling = () => {
 
         setTimeout(() => {
             document.body.scrollTop = document.body.scrollTop + perTick;
-
             if (document.body.scrollTop === to) return;
-
             _scrollToElement(to, duration - 10);
         }, 10);
     };
