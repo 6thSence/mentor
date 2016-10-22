@@ -17,8 +17,11 @@
     .skills__list {
         position: relative;
         box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         margin: auto;
-        padding: 40px 0 0 40px;
+        padding: 40px;
         max-width: 1148px;
         width: 80%;
         border: solid 2px #21ea7b;
@@ -35,16 +38,18 @@
         }
 
         .skills__item {
-            display: inline-block;
-            margin: 0 28px 50px 0;
+            display: block;
+            padding: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            size: 100px;
+            background-origin: content-box;
             vertical-align: middle;
             transition: transform .3s ease-in-out;
 
             &:hover {
                 transform: translateY(-10px);
-                }
-            &:last-child {
-                margin: 0 0 50px;
                 }
             }
 

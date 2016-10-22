@@ -4,8 +4,19 @@
         <div class="footer__share">
             <span class="footer__share-text">Поделиться:</span>
             <div class="footer__share-list">
-                <a href="" class="footer__share-item _vk"></a>
-                <a href="" class="footer__share-item _fb"></a>
+                <script type="text/javascript"><!--
+                document.write(VK.Share.button(
+                        {
+                            url: 'https://yourmentor.herokuapp.com/',
+                            description: '{{text.skills}}',
+                            image: 'https://yourmentor.herokuapp.com/assets/owls/owl_1.png',
+                            noparse: true
+                        },
+                        {
+                            type: 'custom', text: '<div class=\'footer__share-item _vk\'></div>'
+                        }));
+                --></script>
+                <a href="https://www.facebook.com/dialog/share?app_id=205557669873667&display=popup&quote={{text.skills}}&href=https%3A%2F%2Fyourmentor.herokuapp.com%2F&redirect_uri=https%3A%2F%2Fyourmentor.herokuapp.com%2F" class="footer__share-item _fb"></a>
             </div>
         </div>
     </div>

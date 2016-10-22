@@ -20,21 +20,66 @@
 		"contactBack": "Оставьте свои данные и я сообщу вам о ближайшем наборе :)"
 	},
 	"skills": [
-		"html-css-java",
-		"jade",
-		"handlebars",
-		"sass",
-		"stylus",
-		"less",
-		"postcss",
-		"gulp",
-		"node",
-		"express",
-		"mongodb",
-		"heroku",
-		"git",
-		"react",
-		"redux"
+		{
+			"name": "html-css-java",
+			"href": "http://webfoundation.org/about/vision/history-of-the-web/"
+		},
+		{
+			"name": "jade",
+			"href": "https://pugjs.org/api/getting-started.html"
+		},
+		{
+			"name": "handlebars",
+			"href": "http://handlebarsjs.com/"
+		},
+		{
+			"name": "sass",
+			"href": "http://sass-lang.com/"
+		},
+		{
+			"name": "stylus",
+			"href": "http://stylus-lang.com/"
+		},
+		{
+			"name": "less",
+			"href": "http://lesscss.org/"
+		},
+		{
+			"name": "postcss",
+			"href": "http://postcss.org/"
+		},
+		{
+			"name": "gulp",
+			"href": "http://gulpjs.com/"
+		},
+		{
+			"name": "node",
+			"href": "https://nodejs.org/en/"
+		},
+		{
+			"name": "express",
+			"href": "http://expressjs.com/ru/"
+		},
+		{
+			"name": "mongodb",
+			"href": "https://www.mongodb.com/"
+		},
+		{
+			"name": "heroku",
+			"href": "https://www.heroku.com/home"
+		},
+		{
+			"name": "git",
+			"href": "https://git-scm.com/"
+		},
+		{
+			"name": "react",
+			"href": "https://facebook.github.io/react/"
+		},
+		{
+			"name": "redux",
+			"href": "https://github.com/reactjs/redux"
+		}
 	],
 	"options": {
 		"forHow": [
