@@ -1,4 +1,4 @@
-@keyframes show {
+@keyframes showMsg {
     50% {
         opacity: 1;
     }
@@ -87,7 +87,7 @@
 
     .contact-form__button {
         border: 0;
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
         padding: 0 45px;
         display: inline-block;
         color: #fff #21ea7b;
@@ -115,15 +115,15 @@
         }
 
     .contact-form__msg {
-        height: 40px;
+        min-height: 40px;
+        font: 32px/40px 'Proxima Nova Black', Helvetica, Arial, sens-serif;
     }
 
     .contact-form__success, .contact-form__fail {
         text-align: center;
         display: none;
         opacity: 0;
-        animation: show 5s ease-in-out;
-        font: 32px/40px 'Proxima Nova Black', Helvetica, Arial, sens-serif;
+        animation: showMsg 5s forwards;
         color: #21ea7b;
 
         &._show {
@@ -169,6 +169,10 @@
             }
 
         .contact-form__button {
-            margin: * * 65px;
+            margin: 0;
             }
+
+    .contact-form__msg {
+        font-size: 18px;
+        }
     }
