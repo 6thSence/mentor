@@ -10,12 +10,10 @@
     }
 
     .contact__side-title {
-        position: absolute 34% * * -186px;
+        position: absolute 145px * 0 40px;
         margin: 0;
-        color: #d8d8d8;
-        text-transform: uppercase;
-        font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
-        transform: rotate(-90deg);
+        size: 42px *;
+        background: inline('../assets/titles/contacts.svg') top/100% auto no-repeat;
         }
 
     .contact__description {
@@ -115,6 +113,7 @@
         }
 
     .contact-form__msg {
+        padding: 10px 0;
         min-height: 40px;
         font: 32px/40px 'Proxima Nova Black', Helvetica, Arial, sens-serif;
     }
@@ -174,5 +173,7 @@
 
     .contact-form__msg {
         font-size: 18px;
+        line-height: 20px;
+        height: 20px;
         }
     }

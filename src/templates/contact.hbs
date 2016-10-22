@@ -1,7 +1,7 @@
 <section class="content-section contact" id="contact">
     <div class="contact__inner">
         {{> title text="Как со мной" subText="связаться" color="_gray"}}
-        <h2 class="contact__side-title">Как связаться</h2>
+        <h2 class="contact__side-title"><!--Как связаться--></h2>
 
         <div class="contact__description">
             {{> titleDesc text=text.contact}}
@@ -30,8 +30,8 @@
             </div>
             <a type="button" class="contact-form__button _blocked" id="submite-button" title="Введите данные" tabindex="3" disabled>Отправить</a>
             <div class="contact-form__msg">
-                <span class="contact-form__success" id="success">Письмо успешно отправлено!</span>
-                <span class="contact-form__fail" id="fail">Происзошло ошибка письмо не отправленно!</span>
+                <span class="contact-form__success" id="success">Ваша заявка принята</span>
+                <span class="contact-form__fail" id="fail">Что-то пошло не так. Попробуйте позже</span>
             </div>
         </div>
         {{>number class="_contact"}}

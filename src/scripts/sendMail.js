@@ -45,7 +45,7 @@ const sendMail = () => {
         const host = window.location.host;
 
         if (_validate()) {
-            fetch(`/sendMail?name=${nameInput.value}&email=${emailInput.email}`)
+            fetch(`/sendMail?name=${nameInput.value}&email=${emailInput.value}`)
                 .then(respons => _success())
                 .catch(err => _fail());
         }

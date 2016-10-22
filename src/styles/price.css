@@ -8,12 +8,10 @@
         }
 
         .price__side-title {
-            position: absolute 34% * * -196px;
+            position: absolute 145px * 0 40px;
             margin: 0;
-            color: #d8d8d8;
-            text-transform: uppercase;
-            font: 60px/1 'Proxima Nova Black', Helvetica, Arial, sans-serif;
-            transform: rotate(-90deg);
+            size: 42px *;
+            background: inline('../assets/titles/cost.svg') top/100% auto no-repeat;
             }
 
         .price__text {
