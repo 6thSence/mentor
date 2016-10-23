@@ -125,8 +125,8 @@
                 transform: translate(-50%, 0);
                 content: '';
                 display: block;
-                background: inline('../assets/mentor/arrow.svg') left/cover no-repeat;
-                size: 15px 32px;
+                background: inline('../assets/mentor/arrow.svg') left/contain no-repeat;
+                size: 12px 32px;
                 animation: mouseDown 1s infinite;
                 transition: transform .5s ease-in-out;
                 }
