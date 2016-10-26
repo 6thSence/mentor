@@ -7,8 +7,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "npm start": "node server",
-    "postinstall": "gulp build"
+    "npm start": "node server"
   },
   "repository": {
     "type": "git",
