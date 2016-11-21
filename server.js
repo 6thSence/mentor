@@ -13,9 +13,9 @@ app.get('/sendMail', (req, res) =>
         .then((db) =>
             db.collection('Requests')
                 .insert({
-                    "_id": new ObjectId(req.params.userId),
-                    "name": req.query.name,
-                    "email": req.query.email
+                    '_id': new ObjectId(req.params.userId),
+                    'name': req.query.name,
+                    'email': req.query.email
                 },
                 (err, doc) => {
                     if (err) res.send(err);
