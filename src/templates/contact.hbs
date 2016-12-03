@@ -1,26 +1,9 @@
 <section class="content-section contact" id="contact">
     <div class="contact__inner">
-        {{> title text="Как со мной" subText="связаться" color="_gray"}}
-        <h2 class="contact__side-title"><!--Как связаться--></h2>
+        {{> title text="Бесплтаный" subText="урок" color="_gray"}}
 
         <div class="contact__description">
             {{> titleDesc text=text.contact}}
-        </div>
-
-        <div class="contact__social-list">
-            <a href="https://vk.com/d_pushkarskaya" class="contact__social-item _vk" target="_blank"></a>
-            <a href="https://github.com/6thSence" class="contact__social-item _gh" target="_blank"></a>
-        </div>
-
-        <p class="contact__skype">
-            или по Skype:
-            <a href="skype:dashaoralenaoo" class="contact__skype-link" target="_blank">
-                dashaoralenaoO
-            </a>
-        </p>
-
-        <div class="contact__description">
-            {{> titleDesc text=text.contactBack}}
         </div>
 
         <div class="contact-form" id="form">
@@ -40,6 +23,15 @@
                 <input type="hidden" name="is_v5" value="1">
             </form>
         </div>
-        {{>number class="_contact"}}
+
+        <div class="contact__description">
+            {{> titleDesc text=text.contactBack}}
+        </div>
+
+        <div class="contact__social-list">
+            <a href="https://vk.com/d_pushkarskaya" class="contact__social-item _vk" target="_blank"></a>
+            <a href="https://github.com/6thSence" class="contact__social-item _gh" target="_blank"></a>
+        </div>
+
     </div>
 </section>

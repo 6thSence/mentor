@@ -4,6 +4,11 @@
     }
 }
 
+.content-section.contact:before,
+.content-section.contact:after {
+    display: none;
+}
+
 .contact__inner {
     padding: 0;
     border: solid 1px transparent;
@@ -133,7 +138,7 @@
         color: #f40d39;
     }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .contact__side-title {
         display: none;
         }

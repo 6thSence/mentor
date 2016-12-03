@@ -36,7 +36,7 @@
         background: inline('../assets/titles/about.svg') top/100% auto no-repeat;
         }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .about {
 
         & .description:last-child {

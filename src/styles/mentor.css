@@ -19,9 +19,9 @@
 
 .mentor {
     position: relative;
-    min-height: 960px;
+    min-height: 860px;
     box-sizing: border-box;
-    padding: 180px * 95px;
+    padding: 70px *;
     min-width: 960px;
     }
 
@@ -115,7 +115,7 @@
                 }
 
         .mentor__mouse-down {
-            position: absolute * * 85px 50%;
+            position: absolute * * 135px 50%;
             transform: translateX(-50%);
             background: inline('../assets/mentor/mouse.svg') center/22px auto no-repeat;
             size: 22px 32px;
@@ -132,7 +132,7 @@
                 }
             }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .mentor__subtitle,
     .mentor__desc,
     .mentor__inner:after,
@@ -145,7 +145,7 @@
         box-sizing: border-box;
         min-height: 457px;
         min-width: 320px;
-        size: 320px 457px;
+        size: 100% 457px;
         background: inline('../assets/mentor/photo.jpg') center/cover no-repeat;
         }
 

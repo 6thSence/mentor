@@ -29,7 +29,7 @@ body, html {
         }
     }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .container {
         overflow: hidden;
         min-width: 320px;

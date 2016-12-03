@@ -1,5 +1,6 @@
 .plan {
     background: #f6f6f6;
+    min-height: 500px;
     }
 
     .plan__inner {
@@ -59,7 +60,7 @@
                             }
                         }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .plan__side-title {
         display: none;
         }

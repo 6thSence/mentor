@@ -32,7 +32,7 @@
             size: 225px *;
             }
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 720px) {
     .price__side-title {
         display: none;
         }
