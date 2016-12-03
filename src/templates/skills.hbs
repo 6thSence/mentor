@@ -9,7 +9,7 @@
 
         <div class="skills__list">
             {{#each skills}}
-                <a href="{{this.href}}" style="background-image: url('./assets/skills/{{this.name}}.png')" class="skills__item" target="_blank"></a>
+                <a href="{{this.href}}" title={{this.alt}} style="background-image: url('./assets/skills/{{this.name}}.png')" class="skills__item" target="_blank"></a>
             {{/each}}
         </div>
 

@@ -8,7 +8,8 @@ const viewport = () => {
     };
 
     const _checkViewport = (elems) => {
-        titles.forEach(elem => {
+        for (var item = 0; item < titles.length; item++) {
+            const elem = titles[item];
             const rect = elem.getBoundingClientRect();
 
             if (rect.top >= 0 && rect.bottom <= document.documentElement.clientHeight) {
@@ -16,9 +17,9 @@ const viewport = () => {
             } else {
                 elem.classList.contains('_viewport') && elem.classList.remove('_viewport');
             }
-
-        })
+        }
     }
+
     return { init };
 }
 
