@@ -23,6 +23,11 @@ gulp.task('handelbars', () => {
         batch : ['./src/templates']
     };
 
+    gulp.src('src/webinar.hbs')
+        .pipe(handlebars(require('./config.json'), options))
+        .pipe(rename('webinar.html'))
+        .pipe(gulp.dest('public'));
+
     return gulp.src('src/index.hbs')
         .pipe(handlebars(require('./config.json'), options))
         .pipe(rename('index.html'))

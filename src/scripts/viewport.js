@@ -1,5 +1,6 @@
 const header = document.getElementById('header');
 const titles = document.querySelectorAll('.title__wrap');
+const video = document.getElementById('player');
 
 const viewport = () => {
     const init = () => eventListeners();
@@ -8,6 +9,14 @@ const viewport = () => {
     };
 
     const _checkViewport = (elems) => {
+        const rectVideo = video.getBoundingClientRect();
+
+        if (video && rectVideo.top >= 0 && rectVideo.bottom <= document.documentElement.clientHeight) {
+            const src = video.getAttribute('src');
+
+            src.indexOf('autoplay') == -1 && video.setAttribute('src', src + '?autoplay=1&controls=0&amp;showinfo=0');
+        };
+
         for (var item = 0; item < titles.length; item++) {
             const elem = titles[item];
             const rect = elem.getBoundingClientRect();
@@ -24,3 +33,4 @@ const viewport = () => {
 }
 
 titles && viewport().init();
+

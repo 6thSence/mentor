@@ -29,6 +29,12 @@ body, html {
         }
     }
 
+.call-to-action {
+    margin: auto;
+    width: 700px;
+    text-align: center;
+}
+
 @media screen and (max-device-width: 720px) {
     .container {
         overflow: hidden;
@@ -43,4 +49,7 @@ body, html {
                 display: none;
                 }
             }
+    .call-to-action {
+        width: 80%;
+        }
     }

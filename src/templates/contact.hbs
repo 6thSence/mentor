@@ -1,27 +1,13 @@
 <section class="content-section contact" id="contact">
     <div class="contact__inner">
-        {{> title text="Бесплтаный" subText="урок" color="_gray"}}
+        {{> title text="Бесплатный" subText="урок" color="_gray"}}
 
         <div class="contact__description">
             {{> titleDesc text=text.contact}}
         </div>
 
-        <div class="contact-form" id="form">
-            <form method="POST" action="http://api.unisender.com/ru/subscribe?hash=5jtipfh58wn8pdeo3q4qr78upmcmswtxhzcyenhj5pf7sq5zn48jy" name="subscribtion_form" target="_blank">
-                <div class="contact-form__inputs">
-                    <input class="contact-form__input" placeholder="Как вас зовут?" tabindex="1" type="text" name="name" value="">
-                    <input class="contact-form__input" placeholder="Email" tabindex="2" type="text" name="email" value="">
-                </div>
-                <input class="contact-form__button _blocked" id="submite-button" title="Введите данные" tabindex="3" type="submit" value="Отправить">
-                <div class="contact-form__msg">
-                    <span class="contact-form__success" id="success">Ваша заявка принята</span>
-                    <span class="contact-form__fail" id="fail">Что-то пошло не так. Попробуйте позже</span>
-                </div>
-                <input type="hidden" name="charset" value="UTF-8">
-                <input type="hidden" name="default_list_id" value="8348849">
-                <input type="hidden" name="overwrite" value="2">
-                <input type="hidden" name="is_v5" value="1">
-            </form>
+        <div class="contact-form">
+            <button class="b24-web-form-popup-btn-8 contact-form__button">Записаться на бесплатный урок</button>
         </div>
 
         <div class="contact__description">

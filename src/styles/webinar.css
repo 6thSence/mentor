@@ -1,0 +1,172 @@
+@keyframes slide {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+    }
+}
+
+.webinar {
+    position: relative;
+    box-sizing: border-box;
+    padding: 70px *;
+    min-width: 960px;
+    color: #232323;
+    text-align: center;
+}
+
+.webinar__inner {
+    position: relative;
+    margin: auto;
+    transform: translateX(-70px);
+    size: 860px 555px;
+
+&:before, &:after {
+               display: block;
+               border: solid 2px #21ea7b;
+               content: '';
+               min-height: 135px;
+               opacity: 0;
+               transform: translateX(1300px);
+               animation: slide 2s ease-in-out forwards;
+           }
+&:before {
+     z-index: 0;
+     position: absolute 0 0 *;
+     border-bottom: 0;
+ }
+&:after {
+     z-index: 2;
+     position: absolute * 0 0;
+     border-top: 0;
+ }
+}
+
+.webinar__video {
+    position: absolute 45px * * -70px;
+    z-index: 4;
+    size: 680px 420px;
+    opacity: 0;
+    transform: translateX(-600px);
+    animation: slide 2s ease-in-out forwards;
+
+    &:after {
+        z-index: 2;
+        position: absolute 0;
+        display: block;
+        content: '';
+        background: transparent;
+    }
+}
+
+.webinar__video iframe {
+    size: 100%;
+}
+
+.webinar__text {
+    z-index: 3;
+    position: absolute * -187px 170px *;
+    box-sizing: border-box;
+    size: 400px *;
+    background: #fff;
+}
+
+.webinar__name {
+    margin: 0 auto 5px;
+    padding: 20px * 0;
+    color: #232323;
+    font: 40px/44px 'Proxima Nova Light', Helvetica, Arial, sans-serif;
+    size: 350px *;
+    opacity: 0;
+    animation: show 1s ease-in-out 2s forwards;
+}
+
+.webinar__title {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #21ea7b;
+    font: 46px/58px 'Proxima Nova Black', Helvetica, Arial, sans-serif;
+    opacity: 0;
+    animation: show 2s ease-in-out 2s forwards;
+}
+
+.webinar__subtitle {
+    margin: 0 auto 20px;
+    color: #232323;
+    font: 24px/1 'Proxima Nova Light', Helvetica, Arila, sans-serif;
+    box-sizing: border-box;
+    width: 300px;
+    opacity: 0;
+    animation: show 1s ease-in-out 3s forwards;
+
+&._main {
+     width: 800px;
+ }
+}
+
+@media screen and (max-device-width: 720px) {
+    .webinar {
+        padding: 15px;
+        box-sizing: border-box;
+        min-width: 320px;
+        min-height: 100vh;
+        border: 2px solid #21ea7b;
+        size: 100% auto;
+    }
+
+    .webinar__title {
+        margin: 0 0 10px;
+        font-size: 24px;
+        line-height: 36px;
+        size: 100% *;
+    }
+
+    .webinar__subtitle {
+        margin: 0 0 10px;
+        padding: 0;
+        background: transparent;
+        font-size: .8rem;
+        max-width: 100%;
+    }
+
+    .webinar__video {
+        position: static;
+        size: 100% 240px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .webinar__inner {
+        position: static;
+        box-sizing: border-box;
+        size: 100%;
+        transform: none;
+
+        &:before, &:after {
+            display: none;
+        }
+    }
+
+    .webinar__text {
+        position: static;
+        box-sizing: border-box;
+        padding: 15px;
+        background: transparent;
+        size: 100% *;
+    }
+
+    .webinar__name {
+        padding: 0;
+        margin: 0 0 10px;
+        font-size: 24px;
+        background: transparent;
+        size: 100% *;
+    }
+}
